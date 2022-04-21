@@ -28,12 +28,12 @@
 			var height=200; //creates variables for height and width equal to current height and width
 			var width=180;
 			function grow() //creates the function: grow
-		    {
-		        var timer=setInterval(function(){ 			//first thing that happens in grow is a timer is set
-					growImage.style.width = width + "px"; 	//adds "px" to height and width
-               		growImage.style.height = height + "px";
-                	width = width + 10;					//adds 10 pixels to width each time through the timer
-                	height = height + 10;					//adds 10 pixels to width each time through the timer
+		    	{
+				var timer=setInterval(function(){ 			//first thing that happens in grow is a timer is set
+				growImage.style.width = width + "px"; 			//adds "px" to height and width
+				growImage.style.height = height + "px";
+				width = width + 10;					//adds 10 pixels to width each time through the timer
+				height = height + 10;					//adds 10 pixels to width each time through the timer
 		
 				if(height > 340)				//IF or when height is greater than 340 pixels the timer will stop AND..Boomer is placed on screen.
 					{
@@ -42,7 +42,7 @@
 		    			cheer.innerHTML = "BOOMER!!!";
 		    			document.body.appendChild(cheer);
 				}},200);
-		    }
+		     }
 			
 		</script>
 	</body>
