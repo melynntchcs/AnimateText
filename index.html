@@ -10,8 +10,8 @@
 				text-align: center; 
 		    }
 			img {
-				height: 346;
-				width: 342;
+				height: 200;
+				width: 180;
 			}
 	
 		   
@@ -25,8 +25,8 @@
 		<script>
 		    document.getElementById("myImg").addEventListener("click", grow);
 			var growImage= document.getElementById("myImg");
-			var height=346;
-			var width=342;
+			var height=200;
+			var width=180;
 			function grow()
 		    {
 		        var timer=setInterval(function(){
@@ -35,7 +35,7 @@
                 width = width + 4;
                 height = height + 4;
 				console.log(height);
-				if(height>550)
+				if(height>340)
 					{
 						clearInterval(timer);
 						var cheer = document.createElement("h1");
