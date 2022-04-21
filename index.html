@@ -30,15 +30,15 @@
 			function grow()
 		    {
 		        var timer=setInterval(function(){
-				growImage.style.width = width + "px";
-                growImage.style.height = height + "px";
-                width = width + 4;
-                height = height + 4;
-				console.log(height);
-				if(height>340)
+			growImage.style.width = width + "px";
+               		growImage.style.height = height + "px";
+                	width = width + 4;
+                	height = height + 4;
+		
+				if(height > 340)
 					{
-						clearInterval(timer);
-						var cheer = document.createElement("h1");
+					clearInterval(timer);
+					var cheer = document.createElement("h1");
 		    			cheer.innerHTML = "BOOMER!!!";
 		    			document.body.appendChild(cheer);
 				}},200);
