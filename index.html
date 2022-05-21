@@ -30,7 +30,8 @@
 			function grow() //creates the function: grow
 		    	{
 				console.log("Clicked!!");
-				var timer=setInterval(function(){ 			//first thing that happens in grow is a timer is set
+				var timer=setInterval(function(){ //first thing that happens in grow is a timer is set
+				console.log(timer);
 				growImage.style.width = width + "px"; 			//adds "px" to height and width
 				growImage.style.height = height + "px";
 				width = width + 10;					//adds 10 pixels to width each time through the timer
